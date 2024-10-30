@@ -3,7 +3,7 @@
 SOURCE metal_bands.sql
 
 CREATE INDEX idx_origin ON metal_bands(origin);
-CREATE INDEX idx_nb_fans ON metal_bands(nb_fans);
+CREATE INDEX idx_nb_fans ON metal_bands(fans);
 
 SELECT origin, SUM(fans) AS total_fans
 FROM metal_bands
