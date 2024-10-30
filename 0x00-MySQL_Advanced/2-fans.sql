@@ -8,4 +8,4 @@ CREATE INDEX idx_nb_fans ON metal_bands(fans);
 SELECT origin, SUM(fans) AS total_fans
 FROM metal_bands
 GROUP BY origin
-ORDER BY total_fans;
+ORDER BY total_fans DESC;
